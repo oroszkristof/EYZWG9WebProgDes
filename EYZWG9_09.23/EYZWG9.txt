@@ -1,0 +1,18 @@
+GITHUB PARANCSOK
+
+
+git status - Github helyi és a repository aktuális státuszának lekérdezése, ellenőrzése.
+
+git add - Fájl, mappa hozzáadása.
+
+git commit - Lokális változást lehet vele elérni.
+
+git config - Konfiguráció beállításainak megtekintésére alkalmas parancs.
+
+git config --global user.email "you@example.com" - Konfiguráció GitHub fiók email címe alapján.
+ 
+git config --global user.name "Your Name" - Konfiguráció Github fiók felhasználónév alapján.
+
+git push - Fájl feltöltése a GitHub repositoriba a helyi mappából.
+
+git pull - Frissítések letöltése GitHubról.
