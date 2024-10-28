@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title> Listák készítése</title>
+
+    <style>
+
+        dt.fdt {
+
+            color: blue;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        dd.fdd {
+
+            color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+
+    <h1>Lista készítése</h1>
+
+    <h3>a. Rendezetlen lista</h3>
+
+    <ul>
+
+        <li>piros</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+    
+    </ul>
+
+    <ul style="color: blue;list-style-type: square;">
+
+        <li>sárga</li>
+        <li>fehér</li>
+        <li>zöld</li>
+        <li>kék</li>
+        
+    </ul>
+
+    <h3>b. Rendezett lista</h3>
+
+    <ol>
+        <li>pink</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+     </ol>
+
+     <h3>c. Nagybetűk </h3>
+
+     <ol style="list-style-type: upper-alpha;">
+
+    <ol>
+        <li>pink</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+    </ol>
+
+    
+    <h3>d. Római számok </h3>
+
+    <ol style="list-style-type: upper-roman;">
+    
+        <ol>
+            <li>I. ÉVF</li>
+            <li>II. ÉVF</li>
+            <li>III. ÉVF</li>
+        </ol>
+
+    
+        <h3>e. .Inline style</h3>
+
+        <ol style="color: red; list-style-type: upper-alpha; font-size: large;">
+            <li>Sárga</li>
+            <li>Kék</li>
+            <li>Zöld</li>
+            <li>Pink</li>
+        </ol>
+
+    
+        <h3>f. HTML Description Lists</h3>
+
+        <dl>
+            <dt class="fdt">Farkas</dt>
+                <dd class="fdd">Kutyaszerű ragadozó emlős</dd>
+            <dt class="fdt">Fájl</dt>
+                <dd class="fdd">Szöveges állomány</dd>
+            <dt class="fdt">Oroszlán</dt>
+                <dd class="fdd">Macskaszerű ragadozó emlős</dd>
+                <dd class="fdd">Az állatok királya</dd>    
+        </dl>
+
+
+        
+        <h3>g. Embedded HTML Lists</h3>
+
+        <h3 style="color: purple;"> Kedvenc reggeli italaim </h3>
+
+
+        <dl>
+
+            <ul>
+                <li>
+
+                    <dt>Kávé</dt>
+
+                </li>
+
+                <li>
+
+                    <dt> Tea </dt>
+
+                </li>
+
+            </ul>
+
+            <ul>
+
+                <dd>
+                    <li style="list-style-type: circle;"> Fekete </li>
+
+                </dd>
+
+                <dd>
+                    <li style="list-style-type: circle;"> Zöld </li>
+
+                </dd>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <dt> Tek </dt>
+
+                </li>
+
+            </ul>
+
+        </dl>
+
+        <h3>h. Control List Counting </h3>
+
+        <ol start="5">
+
+            <li>KL</li>
+            <li>EL</li>
+            <li>BL</li>
+
+
+</body>
+</html>
