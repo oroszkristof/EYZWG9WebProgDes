@@ -7,91 +7,53 @@
 </head>
 <body>
     
-    <h1> Táblázat készítése </h1>
-    <h2> Második formázott táblázat</h2>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+    </style>
 
-    <table border="1" style="width: 450px; height: 150px;">
-
-        <tr style="
+</head>
+<body>
+    <h1>Táblázat készítése</h1>
+    <h2>Második formázott táblázat </h2>
+    <table style="border: 1px solid black; width: 450px; height: 150;">
+        <tr style="height: 150px; width: 450px;">
+            <td style="width: 100px; text-align: center; height: 100px;">
+                1. sor 1 .elem
             
-            height: 150px;
-            width: 450px;
-            
-            ">
-
-            <td style="
-        
-            width: 150px;
-            text-align: center;
-            ">
-            
-            
-            1. sor 1.elem </td>
-            
-            <td style="
-            
-            text-align: right;
-            vertical-align: bottom;
-            
-            "> 1. sor 2.elem </td>
-            
-            <td style="
-            
-            text-align: center;
-            vertical-align:top;
-            
-            ">
-            
-             1. sor 3.elem </td>
-
+            </td>
+            <td style="text-align: right; vertical-align: bottom">
+                1. sor 2. elem
+            </td>
+            <td style="text-align: center; vertical-align: top;">
+                1. sor 3. elem
+            </td>
+       </tr>
+        <tr style="height: 100px;">
+            <td style="width: 100px;">
+                2. sor 1. elem
+            </td>
+            <td style="width: 150px; height: 150px;">
+                <div style="overflow: scroll; height: 150px; width: 150px; text-align: justify;">
+                    2. sor 2. elem Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hírközlés, tudósítás.
+                </div>    
+            </td>
+            <td style="text-align: right; vertical-align: top;">
+                2. sor 3. elem
+            </td>
         </tr>
-
-        <tr style="
-            height: 50px;
-            
-            ">
-
-            <td> 2. sor 1.elem </td>
-
-            <td style="
-            
-            height: 150px;
-            width: 450px;
-            ">
-
-            <div style=" 
-
-                overflow: scroll;
-                height: 150px;
-                width: 450px;
-                text-align: justify;
-
-            
-            "> 2. sor 2.elem Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hirközlés, tudósítás etc. </div> </td>
-
-
-            <td style="
-            
-            text-align: right;
-            vertical-align:top;
-            
-            "> 2. sor 3.elem </td>
-
+        <tr style="height: 250px;">
+            <td>
+                3. sor 1. elem
+            </td>
+            <td>
+                3. sor 2. elem
+            </td>
+            <td>
+                3. sor 3. elem Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hírközlés, tudósítás
+            </td>
         </tr>
-
-        <tr style="
-            height: 300px;
-            
-            ">
-
-            <td> 3. sor 1.elem </td>
-            <td> 3. sor 2.elem </td>
-            <td> 3. sor 3.elem 
-                Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hirközlés, tudósítás etc. </td>
-
-        </tr>
-
     </table>
-
 </body>
 </html>
