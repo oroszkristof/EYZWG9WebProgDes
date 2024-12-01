@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Összefoglaló</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="hatter.css">
+    <link rel="stylesheet" href="eloszo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: auto auto;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            height: 10rem;
+        }
+
+        .grid button {
+            width: 5rem;
+            height: 2.5rem;
+        }
+
+        .grid button:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .grid button:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .grid button:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .grid button:nth-child(4) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .grid button:nth-child(5) {
+            grid-column: span 2;
+            grid-row: 2;
+            justify-self: center;
+        }
+
+        footer {
+            margin: 00rem auto;
+            border-top: 4px solid gray;
+            width: 37.5rem;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <span class="cimsor">
+            <li><a href="fooldal.html">SZÁMÍTÓGÉPES HÁLÓZATOK</a></li>
+        </span>
+        <ul>
+            <li><a href="eloszo.html">Előszó</a></li>
+            <li><a href="csoportositas.html">Hálózatok fajtái</a></li>
+            <li><a href="kommunikacio.html">Hálózati kommunikáció</a></li>
+            <li><a href="jelkodolas.html">Jelkódolási technológiák</a></li>
+            <li><a href="kozegek.html">Átviteli közegek</a></li>
+            <li><a href="topologia.html">Topológiák</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>Tekintse meg az összefogaló videót a témával kapcsolatban!</h1> <br>
+    </header>
+
+    <section>
+
+        <video src="kepek/video.mp4" autoplay="false" controls width="650"></video>
+        <div class="grid">
+
+            <div>
+                <button id="start">
+                    <span class="material-symbols-outlined">
+                        play_arrow
+                    </span>
+                </button>
+                <button id="stop">
+                    <span class="material-symbols-outlined">
+                        stop
+                    </span>
+                </button>
+                <button id="restart">
+                    <span class="material-symbols-outlined">
+                        replay
+                    </span>
+                </button>
+                <button id="rewind">
+                    <span class="material-symbols-outlined">
+                        fast_rewind
+                    </span>
+                </button>
+                <button id="forward">
+                    <span class="material-symbols-outlined">
+                        fast_forward
+                    </span>
+                </button>
+
+            </div>
+            <div>
+                <button id="mute">
+                    <span class="material-symbols-outlined">
+                        volume_off
+                    </span>
+                </button>
+                <button id="quite">
+                    <span class="material-symbols-outlined">
+                        volume_mute
+                    </span>
+                </button>
+                <button id="loud">
+                    <span class="material-symbols-outlined">
+                        volume_up
+                    </span>
+                </button>
+            </div>
+
+    </section>
+
+    <script>
+        let btnClick = (id, onclick) => document.getElementById(id).addEventListener('click', onclick);
+        let video = document.querySelector('video');
+        btnClick('start', () => video.play());
+        btnClick('stop', () => video.pause());
+        btnClick('restart', () => {
+            video.currentTime = 0;
+            video.play();
+        });
+
+
+        btnClick('rewind', () => {
+            video.currentTime = Math.max(0, video.currentTime - 10);
+        });
+
+        btnClick('forward', () => {
+            video.currentTime = Math.min(video.duration, video.currentTime + 10);
+        });
+
+        btnClick('mute', () => video.volume = 0);
+        btnClick('quite', () => video.volume = 0.5);
+        btnClick('loud', () => video.volume = 1);
+
+    </script>
+
+    <footer>
+        <h4>A videó saját készítésű!</h4>
+    </footer>
+
+</body>
+
+</html>
+

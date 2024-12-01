@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hálózati kommunikáció</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="urlap.css">
+    <link rel="stylesheet" href="hatter.css">
+    <link rel="stylesheet" href="ikon.css">
+
+    <style>
+        .stílus {
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+
+        }
+
+        .fogalmak {
+            color: white;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 10%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <span class="cimsor">
+            <li><a href="fooldal.html">SZÁMÍTÓGÉPES HÁLÓZATOK</a></li>
+        </span>
+        <ul>
+            <li><a href="eloszo.html">Előszó</a></li>
+            <li><a href="csoportositas.html">Hálózatok fajtái</a></li>
+            <li><a href="kommunikacio.html" class="active">Hálózati kommunikáció</a></li>
+            <li><a href="jelkodolas.html">Jelkódolási technológiák</a></li>
+            <li><a href="kozegek.html">Átviteli közegek</a></li>
+            <li><a href="topologia.html">Topológiák</a></li>
+        </ul>
+
+    </div>
+
+    <header>
+
+        <div class="stílus">
+
+
+            <img src="kepek/hal.komm.jpg" alt="Hálózati kommunikáció" width="600" height="250"> <br><br><br>
+
+            <p> A legfelső rétegben jelenik meg a kommunikáció tárgyát képező üzenet (M). Logikailag a legfelsőbb
+                rétegbeli ( az 5. rétegbeli) entitás az üzenetet a társ (peer) legfelsőbb rétegbeli entitásának küldi,
+                az adott réteg működését leíró protokoll alapján. Valójában az adó (forrás) oldalon egy adott rétegbeli
+                entitás az
+                alatta elhelyezkedő rétegnek adja tovább az üzenetet (az 5. réteg a 4. réteg által nyújtott
+                szolgáltatásokra építve látja el
+                a feladatát). <br> <br> Az alsóbb réteg (4. réteg) a saját funkcionalitásainak az ellátásához
+                további információkat társíthat a
+                felsőbb rétegtől kapott információs egység elé ("H" fejrész, "header" információ), vagy esetleg az
+                után
+                ("T" végrész, "tailor" információ; pl. ellenőrző összeg). <br><br> Az egyes rétegekben megadott
+                méretkorlátok miatt
+                előfordulhat, hogy a felsőbb rétegben egy egységként megjelenő információt darabolni kell (ld. a
+                példa
+                3. rétegében). A darabolás (fregmetálás) után létrejött információs egységek külön-külön entitásként
+                haladnak a cél
+                felé. </p>
+
+        </div>
+
+
+        <div class="fogalmak">
+
+            <b>
+
+                <h4>HÁLÓZATI FOGALMAK</h4>
+                Beágyazás: <br> A felsőbb szintről érkező, s az adott réteg által már nem módosítható információ
+                egy bizonyos alsóbb rétegbeli protokoll fejlécével történő kiegészítése,
+                becsomagolása. <br> <br>
+
+                Protokoll adategység: <br> Az adott réteg protokollja által kezelt fejlécből
+                és adatból álló egység. A PDU adatrészében tipikusan a felsőbb réteg SDU-ja található.
+        </div>
+
+        </b>
+
+        <section>
+            <a href="osszefoglalas.html" target="_blank" id="info-link">
+                <img src="kepek/ikon.png" alt="Információ" id="info-kep">
+            </a>
+
+            <div class="urlap">
+                <a href="urlap.html">Kérdése van a témával kapcsolatban? Ide kattintva felteheti!</a>
+            </div>
+        </section>
+
+
+    </header>
+
+
+</body>
+
+</html>

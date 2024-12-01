@@ -1,0 +1,48 @@
+form {
+    background-color: lightblue; 
+    border: 2px darkblue; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: darkblue;
+}
+
+input, textarea, button {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid darkblue; 
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none; 
+}
+
+button {
+    background-color: darkblue; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: blue; 
+}
+
+.igazit {
+    padding-left: 39%;
+}
+
